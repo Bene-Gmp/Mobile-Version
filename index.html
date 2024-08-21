@@ -25,16 +25,24 @@
             text-align: center;
             width: 100%;
         }
-
+ 
+        
+        .header-logo {
+            /* Änderung hier: max-width auf 100% angepasst */
+            max-width: 100%; 
+            height: auto;
+            margin-bottom: 10px;
+        }
+        
         h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 1.5em;
             font-weight: bold;
         }
 
         .chatbot-container {
-            margin-top: 50px;
-            width: 100%;
+            margin-top: 20px;
+            width: 90%;
             max-width: 800px;
             text-align: center;
             background-color: #292929;
@@ -44,21 +52,37 @@
         }
 
         .chatbot-container p {
-            font-size: 1.5em;
+            font-size: 1.2em;
             color: #d0d0d0;
         }
+         @media (max-width: 600px) {
+            h1 {
+                /* Schriftgröße auf kleinen Bildschirmen weiter reduzieren */
+                font-size: 1.2em;
+            }
+
+            .chatbot-container p {
+                /* Schriftgröße im Chatbot-Container auf kleinen Bildschirmen weiter reduzieren */
+                font-size: 1em;
+            }
+             
+       }
+        
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>Willkommen bei FIT STAR</h1>
+    
+ <header>
+        <a href="https://www.fit-star.de" target="_blank" class="header-link">
+            <img src="Logo.png" alt="FIT STAR Logo" class="header-logo">
+        </a>
+        <h1>Willkommen bei BOT STAR, dem internen Chatbot von FIT STAR</h1>
     </header>
 
     <div class="chatbot-container">
-        <p>Der Chatbot wird automatisch gestartet. Bitte warten...</p>
+        <p>Der Chatbot lässt sich mit dem gelben Button öffnen</p>
     </div>
-
+    
     <!-- Botsonic Einbettungscode -->
     <script>
       (function (w, d, s, o, f, js, fjs) {
