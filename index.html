@@ -112,29 +112,27 @@
 
     
     <!-- Botsonic Einbettungscode -->
-    <script>
-      (function (w, d, s, o, f, js, fjs) {
-        w["botsonic_widget"] = o;
-        w[o] =
-          w[o] ||
-          function () {
-            (w[o].q = w[o].q || []).push(arguments);
-          };
-        (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
-        js.id = o;
-        js.src = f;
-        js.async = 1;
-        fjs.parentNode.insertBefore(js, fjs);
-      })(window, document, "script", "Botsonic", "https://widget.botsonic.com/CDN/botsonic.min.js");
-      Botsonic("init", {
-        serviceBaseUrl: "https://api-azure.botsonic.ai",
-        token: "6980a4e3-af80-4cb5-93a8-a7871c51b542",
-      });
-
-    function toggleChatbot() {
-        Botsonic('toggle');
-         }
-    </script>
+ 
+     <script>
+  (function (w, d, s, o, f, js, fjs) {
+    w["botsonic_widget"] = o;
+    w[o] =
+      w[o] ||
+      function () {
+        (w[o].q = w[o].q || []).push(arguments);
+      };
+    (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+    js.id = o;
+    js.src = f;
+    js.async = 1;
+    fjs.parentNode.insertBefore(js, fjs);
+  })(window, document, "script", "Botsonic", "https://widget.botsonic.com/CDN/botsonic.min.js");
+  Botsonic("init", {
+    serviceBaseUrl: "https://api-azure.botsonic.ai",
+    token: "7baa9bb9-da6c-4635-bd97-ee34b0028cce",
+  });
+</script>
+    
     
     <!-- Ende des Botsonic Einbettungscodes -->
 
